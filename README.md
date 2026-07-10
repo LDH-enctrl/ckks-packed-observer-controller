@@ -233,3 +233,24 @@ RTX 4060 8 GB 환경에서는 `bootparam_35.json`을 바로 초기화할 때 GPU
 Dummy warm-up failed/caught as expected:
 std::bad_alloc: out_of_memory
 ```
+
+## Acknowledgment and Citation
+
+This implementation uses
+[Cheddar](https://github.com/scale-snu/cheddar-fhe),
+a GPU-accelerated CKKS fully homomorphic encryption library.
+
+The CKKS and bootstrapping parameters used in this project are based on
+Cheddar's `bootparam_35.json`.
+
+When using this repository, please also cite the Cheddar paper:
+
+```bibtex
+@inproceedings{asplos-2026-cheddar,
+  author = {Choi, Wonseok and Kim, Jongmin and Ahn, {Jung Ho}},
+  title = {Cheddar: {A} Swift Fully Homomorphic Encryption Library Designed for {GPU} Architectures},
+  booktitle = {Proceedings of the 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+  year = {2025},
+  url = {https://doi.org/10.1145/3760250.3762223},
+  doi = {10.1145/3760250.3762223}
+}
