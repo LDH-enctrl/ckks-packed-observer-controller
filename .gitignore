@@ -1,0 +1,9 @@
+build/
+*.log
+*.csv
+*.bak
+*.bak_*
+*.o
+*.out
+.vscode/
+.idea/
